@@ -1,0 +1,207 @@
+{
+    "id": 255,
+    "name": "Создание CJ",
+    "lastModifiedDate": "2025-12-12 17:41:39",
+    "productId": 4,
+    "steps": [
+        {
+            "bi": [
+                {
+                    "id": 326,
+                    "uniqueIdent": "BI.00.00.03.26",
+                    "name": "BI Создание CJ",
+                    "descr": null,
+                    "touchPoints": null,
+                    "feelings": null,
+                    "eaGuid": null,
+                    "productId": 4,
+                    "ownerRole": null,
+                    "metrics": null,
+                    "authorId": 159634,
+                    "createdDate": "2025-12-12 03:00:00",
+                    "lastModifiedDate": "2025-12-12 03:00:00",
+                    "status": {
+                        "id": 2,
+                        "name": "Не передан"
+                    },
+                    "clientScenario": null,
+                    "ucsReaction": null,
+                    "participants": [],
+                    "channel": [],
+                    "flowLink": [],
+                    "document": [],
+                    "mockupLink": [],
+                    "biSteps": [
+                        {
+                            "id": 5,
+                            "name": "Парсинг BPMN",
+                            "latency": null,
+                            "errorRate": null,
+                            "rps": null,
+                            "relations": [
+                                {
+                                    "id": 4,
+                                    "userId": 159634,
+                                    "description": "",
+                                    "tcId": 29,
+                                    "tcName": "Возможность получения данных о business capability",
+                                    "tcCode": "FDMSHOWCASEAPP.001",
+                                    "productId": 4,
+                                    "productName": "Витрина ФДМ (App)",
+                                    "productAlias": "fdmshowcaseapp",
+                                    "interfaceId": null,
+                                    "interfaceName": null,
+                                    "interfaceCode": null,
+                                    "operationId": null,
+                                    "operation": null,
+                                    "order": null
+                                },
+                                {
+                                    "id": 3,
+                                    "userId": 159634,
+                                    "description": "Пояснение к вызову",
+                                    "tcId": null,
+                                    "tcName": null,
+                                    "tcCode": null,
+                                    "productId": 4,
+                                    "productName": "Витрина ФДМ (App)",
+                                    "productAlias": "fdmshowcaseapp",
+                                    "interfaceId": 1663,
+                                    "interfaceName": "API управления бизнес-возможностями",
+                                    "interfaceCode": "capability-api",
+                                    "operationId": 17235,
+                                    "operation": "GET /api/v1/product/infra",
+                                    "order": null,
+                                    "latency": 123.0,
+                                    "errorRate": 0.1232,
+                                    "rps": 2
+                                }
+                            ]
+                        },
+                        {
+                            "id": 4,
+                            "name": "Создание CJ",
+                            "latency": 123.0,
+                            "errorRate": 0.1232,
+                            "rps": 123.0,
+                            "relations": [
+                                {
+                                    "id": 3,
+                                    "userId": 159634,
+                                    "description": "Пояснение к вызову",
+                                    "tcId": null,
+                                    "tcName": null,
+                                    "tcCode": null,
+                                    "productId": 4,
+                                    "productName": "Витрина ФДМ (App)",
+                                    "productAlias": "fdmshowcaseapp",
+                                    "interfaceId": 1663,
+                                    "interfaceName": "API управления бизнес-возможностями",
+                                    "interfaceCode": "capability-api",
+                                    "operationId": 17235,
+                                    "operation": "GET /api/v4/capabilities",
+                                    "order": null
+                                }
+                            ]
+                        }
+                    ],
+                    "target": false,
+                    "communal": false,
+                    "draft": false
+                }
+            ],
+            "id": 355,
+            "cjId": 255,
+            "order": 0,
+            "name": "Создание CJ",
+            "description": null
+        },
+        {
+            "bi": [
+                {
+                    "id": 327,
+                    "uniqueIdent": "BI.00.00.03.27",
+                    "name": "BI Добавление SLA",
+                    "descr": null,
+                    "touchPoints": null,
+                    "feelings": null,
+                    "eaGuid": null,
+                    "productId": 4,
+                    "ownerRole": null,
+                    "metrics": null,
+                    "authorId": 159634,
+                    "createdDate": "2025-12-12 03:00:00",
+                    "lastModifiedDate": "2025-12-12 03:00:00",
+                    "status": {
+                        "id": 2,
+                        "name": "Не передан"
+                    },
+                    "clientScenario": null,
+                    "ucsReaction": null,
+                    "participants": [],
+                    "channel": [],
+                    "flowLink": [],
+                    "document": [],
+                    "mockupLink": [],
+                    "biSteps": [
+                        {
+                            "id": 6,
+                            "name": "Внесение метрик",
+                            "latency": null,
+                            "errorRate": null,
+                            "rps": null,
+                            "relations": [
+                                {
+                                    "id": 3,
+                                    "userId": 159634,
+                                    "description": "Пояснение к вызову",
+                                    "tcId": null,
+                                    "tcName": null,
+                                    "tcCode": null,
+                                    "productId": 4,
+                                    "productName": "Витрина ФДМ (App)",
+                                    "productAlias": "fdmshowcaseapp",
+                                    "interfaceId": 1663,
+                                    "interfaceName": "API управления бизнес-возможностями",
+                                    "interfaceCode": "capability-api",
+                                    "operationId": 17235,
+                                    "operation": "GET /api/v4/systems/{code}",
+                                    "order": null,
+                                    "latency": 123.0,
+                                    "errorRate": 0.1232,
+                                    "rps": 2
+                                }
+                            ]
+                        }
+                    ],
+                    "target": false,
+                    "communal": false,
+                    "draft": false
+                }
+            ],
+            "id": 356,
+            "cjId": 255,
+            "order": 1,
+            "name": "Связь с ландшафтом",
+            "description": null
+        },
+        {
+            "bi": [],
+            "id": 357,
+            "cjId": 255,
+            "order": 2,
+            "name": "Согласование",
+            "description": null
+        }
+    ],
+    "userPortrait": "Корп.арх.",
+    "createdDate": "2025-12-12 17:37:07",
+    "author": {
+        "id": 159634,
+        "fullName": "Иваонов Иван",
+        "email": "user@local"
+    },
+    "uniqueIdent": "CJ.00.00.02.55",
+    "bpmn": true,
+    "draft": false
+}

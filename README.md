@@ -15,14 +15,10 @@ Already a pro? Just edit this README.md and make it your own. Want to make it ea
 
 ```
 cd existing_repo
-git remote add origin https://git.vimpelcom.ru/products/eafdmmart/obs-dashboard.git
+git remote add origin https://github.com/tech-beeline/beeatlas-obs-dashboard.git
 git branch -M main
 git push -uf origin main
 ```
-
-## Integrate with your tools
-
-- [ ] [Set up project integrations](https://git.vimpelcom.ru/products/eafdmmart/obs-dashboard/-/settings/integrations)
 
 ## Collaborate with your team
 

@@ -1,0 +1,7 @@
+services:
+  obs-dashboard:
+    container_name: obs-dashboard
+    build: .
+    ports:
+      - "8080:3000"
+    env_file: "default.env"
